@@ -35,15 +35,15 @@
       "inputSchemas": []
     },
     {
-      "id": "5c4e7c9a-4fe8-4684-ac5e-a60621b3e288",
-      "name": "local",
+      "id": "32aec7d1-7a17-437a-bad0-bbb6417084d6",
+      "name": "current",
       "type": "Eventhouse",
       "properties": {
         "dataIngestionMode": "ProcessedIngestion",
         "workspaceId": "00000000-0000-0000-0000-000000000000",
         "itemId": "1681c20e-f1f4-a206-4f35-2f1841846017",
         "databaseName": "yuljinkql",
-        "tableName": "es001",
+        "tableName": "newTable",
         "inputSerialization": {
           "type": "Json",
           "properties": {
@@ -56,57 +56,7 @@
           "name": "myStream1"
         }
       ],
-      "inputSchemas": [
-        {
-          "name": "myStream1",
-          "schema": {
-            "columns": [
-              {
-                "name": "BikepointID",
-                "type": "Nvarchar(max)",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "Street",
-                "type": "Nvarchar(max)",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "Neighbourhood",
-                "type": "Nvarchar(max)",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "Latitude",
-                "type": "Float",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "Longitude",
-                "type": "Float",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "No_Bikes",
-                "type": "BigInt",
-                "fields": null,
-                "items": null
-              },
-              {
-                "name": "No_Empty_Docks",
-                "type": "BigInt",
-                "fields": null,
-                "items": null
-              }
-            ]
-          }
-        }
-      ]
+      "inputSchemas": []
     }
   ],
   "streams": [
