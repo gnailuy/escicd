@@ -11,39 +11,15 @@
   ],
   "destinations": [
     {
-      "id": "14402b90-5c8c-41ec-a4c2-7a401d03a41f",
-      "name": "external",
-      "type": "Eventhouse",
-      "properties": {
-        "dataIngestionMode": "ProcessedIngestion",
-        "workspaceId": "31166351-eb33-4359-a1ca-e34598cc22bf",
-        "itemId": "2e2fd3b6-6056-4df5-8407-9bd14a651b49",
-        "databaseName": "yuljinkql",
-        "tableName": "backup",
-        "inputSerialization": {
-          "type": "Json",
-          "properties": {
-            "encoding": "UTF8"
-          }
-        }
-      },
-      "inputNodes": [
-        {
-          "name": "ManageFields"
-        }
-      ],
-      "inputSchemas": []
-    },
-    {
-      "id": "32aec7d1-7a17-437a-bad0-bbb6417084d6",
-      "name": "current",
+      "id": "6447b35a-6348-423b-9add-7fabf33af4b9",
+      "name": "internal",
       "type": "Eventhouse",
       "properties": {
         "dataIngestionMode": "ProcessedIngestion",
         "workspaceId": "00000000-0000-0000-0000-000000000000",
         "itemId": "1681c20e-f1f4-a206-4f35-2f1841846017",
         "databaseName": "yuljinkql",
-        "tableName": "newTable",
+        "tableName": "es001",
         "inputSerialization": {
           "type": "Json",
           "properties": {
