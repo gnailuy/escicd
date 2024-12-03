@@ -11,14 +11,14 @@
   ],
   "destinations": [
     {
-      "id": "6447b35a-6348-423b-9add-7fabf33af4b9",
+      "id": "9ddd75ce-c6f4-49d4-854a-197bfd69098c",
       "name": "internal",
       "type": "Eventhouse",
       "properties": {
         "dataIngestionMode": "ProcessedIngestion",
         "workspaceId": "00000000-0000-0000-0000-000000000000",
-        "itemId": "1681c20e-f1f4-a206-4f35-2f1841846017",
-        "databaseName": "yuljinkql",
+        "itemId": "6e6ac88d-e576-98fc-4d3c-2aa2e6111a01",
+        "databaseName": "backupkql",
         "tableName": "es001",
         "inputSerialization": {
           "type": "Json",
