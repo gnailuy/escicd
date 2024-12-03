@@ -16,8 +16,8 @@
       "type": "Eventhouse",
       "properties": {
         "dataIngestionMode": "ProcessedIngestion",
-        "workspaceId": "00000000-0000-0000-0000-000000000000",
-        "itemId": "6e6ac88d-e576-98fc-4d3c-2aa2e6111a01",
+        "workspaceId": "9de2a590-3415-4df9-9368-92e02939ca82",
+        "itemId": "e6111a01-2aa2-4d3c-98fc-e5766e6ac88d",
         "databaseName": "backupkql",
         "tableName": "es001",
         "inputSerialization": {
