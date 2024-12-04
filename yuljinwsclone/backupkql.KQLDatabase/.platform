@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "backupkql",
+    "description": "backupkql"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6e6ac88d-e576-98fc-4d3c-2aa2e6111a01"
+  }
+}
