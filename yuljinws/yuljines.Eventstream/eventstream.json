@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "id": "97df4687-968e-45ed-9081-63b0716e91b2",
+      "name": "bike",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "a13e61fe-d5fc-4fb0-bfe8-5b92ac943b47",
+      "name": "kusto",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "f9175f92-aa9f-a527-44ee-3fdea5a6ea3c",
+        "databaseName": "yuljinkql",
+        "tableName": "pushTable",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "yuljines-stream"
+        }
+      ],
+      "inputSchemas": []
+    }
+  ],
+  "streams": [
+    {
+      "id": "bed8692a-9bef-423a-8ad2-09b671645262",
+      "name": "yuljines-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bike"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
