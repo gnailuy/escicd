@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "id": "27868a2f-3105-4da9-ba4d-2cde09a9dd83",
+      "name": "bike",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "233f025c-5adc-42d7-a558-7819cc605d67",
+      "name": "kusto",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "DirectIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "a21acb9c-56ed-9470-4f42-f2817abea768",
+        "tableName": "pull",
+        "connectionName": "yuljinkustopull_yuljinkusto-pull",
+        "mappingRuleName": "pull_mapping"
+      },
+      "inputNodes": [
+        {
+          "name": "yuljinkustopull-stream"
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "91fc9dc7-322c-47c2-a84b-e658bf6793cf",
+      "name": "yuljinkustopull-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bike"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventhouse",
+    "displayName": "yuljinkusto",
+    "description": "yuljinkusto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5fef03fb-601e-aaac-4c9c-7ab5b434b03f"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "yuljinkusto",
+    "description": "yuljinkusto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a21acb9c-56ed-9470-4f42-f2817abea768"
+  }
+}

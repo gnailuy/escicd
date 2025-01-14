@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "2fb8516e-08a0-46c6-8310-b8305fef2db4",
+      "name": "bike",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "id": "d34d786d-ad9e-4ad2-aec8-398311216f20",
+      "name": "eventstream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bike"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}

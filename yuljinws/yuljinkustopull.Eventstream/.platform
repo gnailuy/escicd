@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventstream",
+    "displayName": "yuljinkustopull"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "71cb97bf-1a60-a440-4d75-a39de0723878"
+  }
+}
