@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "kusto",
+    "description": "kusto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "00642d72-d0c5-88b3-4e17-93c9f582825c"
+  }
+}

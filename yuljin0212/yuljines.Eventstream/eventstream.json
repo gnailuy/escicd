@@ -1,0 +1,103 @@
+{
+  "sources": [
+    {
+      "id": "1669346e-2d0c-417d-9db1-227608fd5ecc",
+      "name": "bike",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "ae36e557-1304-4801-83db-c60de4c37330",
+      "name": "push",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "00642d72-d0c5-88b3-4e17-93c9f582825c",
+        "databaseName": "kusto",
+        "tableName": "push",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "yuljines-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "yuljines-stream",
+          "schema": {
+            "columns": [
+              {
+                "name": "BikepointID",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Street",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Neighbourhood",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Latitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Longitude",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Bikes",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "No_Empty_Docks",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "9d52893c-85f2-4656-8cef-7bf2e1a8fcbd",
+      "name": "yuljines-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bike"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
